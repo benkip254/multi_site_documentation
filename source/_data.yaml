@@ -1,0 +1,46 @@
+# Configuration for the package that this website documents.
+package:
+  name: static_shock
+  title: Static Shock
+  description: A static site generator for Dart
+  is_on_pub: false
+  
+  github:
+    url: https://github.com/benkip254/test_server
+    organization: benkip254
+    name: test_server
+  
+  discord: 
+  sponsorship: 
+
+# Configuration of the GitHub plugin for loading info about GitHub repositories.
+github:
+  contributors:
+    repositories:
+      
+      - { organization: benkip254, name: test_server }
+      
+
+# The default layout applied to all pages in this website.
+layout: layouts/docs_page.jinja
+
+# The global navigation manu for all documentation pages in this website.
+navigation:
+  
+  show_contributors: true
+  
+
+  items:
+    - title: Welcome
+      url: /
+
+    - title: "Get Started"
+      url: /get-started
+
+    - title: Guides
+      tag: guides
+      sortBy: navOrder
+
+    - title: Concepts
+      tag: concepts
+      sortBy: navOrder
